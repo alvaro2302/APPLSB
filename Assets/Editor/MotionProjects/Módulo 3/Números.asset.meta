@@ -1,8 +1,10 @@
 fileFormatVersion: 2
 guid: 267f39b0be65c514e9adad7448984ce3
+labels:
+- UMotion Project
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 0
+  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
