@@ -9,7 +9,7 @@ namespace LSB
         public Animator anim;
         public AnimatorControllerStates controller;
         public Text mainText;
-
+        public Text textLetter;
         public float animationDuration;
         public float animationSpeed;
 
@@ -70,6 +70,9 @@ namespace LSB
                 }
                 foreach(string code in selected.code)
                 {
+                    string letter = LocalParser.getAnimationCodeLetter(code.Substring(1));
+                    textLetter.text = letter;
+
                     anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, int.Parse(code.Substring(1)));
                      
                     AnimationClip clip = controller.GetAnimationClip(anim,code.Substring(1));
@@ -84,6 +87,7 @@ namespace LSB
             anim.speed = DEFAULT_SPEED;
             anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, 0);
             mainText.text = "";
+            textLetter.text = "";
         }
          
     }
