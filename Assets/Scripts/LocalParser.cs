@@ -29,7 +29,9 @@ namespace LSB
             output.tokens = new List<Expression>();
             List<string> list = SplitInput(RemoveDiacritics(input.ToLower()), animationListCodes);
             foreach (string word in list)
-            { 
+            {
+                Debug.Log("palabra: ");
+                Debug.Log(RemoveDiacritics(word.ToLower()));
                 Expression expression = new Expression();
                 expression.word = RemoveDiacritics(word.ToLower());
                 expression.code = new List<string>();

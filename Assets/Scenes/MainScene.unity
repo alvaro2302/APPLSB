@@ -590,6 +590,7 @@ MonoBehaviour:
   anim: {fileID: 1461777770}
   controller: {fileID: 1999706635}
   mainText: {fileID: 301244723}
+  textLetter: {fileID: 920046114}
   animationDuration: 1.5
   animationSpeed: 1
 --- !u!1 &197309041
@@ -2623,7 +2624,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asasas
+  m_Text: 
 --- !u!222 &920046115
 CanvasRenderer:
   m_ObjectHideFlags: 0
