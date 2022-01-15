@@ -10,7 +10,9 @@ namespace LSB
 {
     public class ParserRequestor : MonoBehaviour
     {
-        private static readonly string API_URL = "https://lsbapi.herokuapp.com"; 
+        private static readonly string API_URL_BEFORE = "https://lsbapi.herokuapp.com";
+        private static readonly string API_URL_AFTER = "https://shielded-atoll-72189.herokuapp.com";
+        private static readonly string API_URL = API_URL_AFTER;       
         [Serializable] public class ResultHandler : UnityEvent<UnityWebRequest, string> { }
         public ResultHandler OnResult;
 
@@ -37,7 +39,7 @@ namespace LSB
             mainText.color = Color.red;
             mainText.text = "Cargando...";
             UnityWebRequest request = new UnityWebRequest(API_URL, "POST");
-            request.timeout = 10;
+            request.timeout = 30;
             byte[] bodyRaw = Encoding.UTF8.GetBytes(JsonUtility.ToJson(createRequest(word)));
 
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);

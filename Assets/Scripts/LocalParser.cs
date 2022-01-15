@@ -30,6 +30,8 @@ namespace LSB
             List<string> list = SplitInput(RemoveDiacritics(input.ToLower()), animationListCodes);
             foreach (string word in list)
             { 
+                Debug.Log("palabra: ");
+                Debug.Log(RemoveDiacritics(word.ToLower()));
                 Expression expression = new Expression();
                 expression.word = RemoveDiacritics(word.ToLower());
                 expression.code = new List<string>();
@@ -139,6 +141,42 @@ namespace LSB
                 case '9': return "#32110";
             }
             return "#00000";
+        }
+
+        public static string getAnimationCodeLetter(string code)
+        {
+            switch (code)
+            {
+                case "00101": return "a";
+                case "00102": return "b";
+                case "00103": return "c";
+                case "00105": return "d";
+                case "00106": return "e";
+                case "00107": return "f";
+                case "00108": return "g";
+                case "00109": return "h";
+                case "00110": return "i";
+                case "00111": return "j";
+                case "00112": return "k";
+                case "00113": return "l";
+                case "00115": return "m";
+                case "00116": return "n";
+                case "00117": return "ñ";
+                case "00118": return "o";
+                case "00119": return "p";
+                case "00120": return "q";
+                case "00121": return "r";
+                case "00123": return "s";
+                case "00124": return "t";
+                case "00125": return "u";
+                case "00126": return "v";
+                case "00127": return "w";
+                case "00128": return "x";
+                case "00129": return "y";
+                case "00130": return "z";
+
+            }
+            return "";
         }
 
         private static string RemoveDiacritics(string text)
