@@ -119,7 +119,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.1.0
+  bundleVersion: 1.2.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -159,7 +159,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.DefaultCompany.LSB
   buildNumber: {}
-  AndroidBundleVersionCode: 13
+  AndroidBundleVersionCode: 14
   AndroidMinSdkVersion: 17
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -248,7 +248,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/KEVIN/Documents/Unity/LSB/LSB/user.keystore
+  AndroidKeystoreName: C:/Users/SAM/Desktop/SamuelValverde/APPLSB/user.keystore
   AndroidKeyaliasName: lsbrelease
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
